@@ -93,14 +93,14 @@ typedef struct tagWndPosition
 {
 	int left;///<Specifies the X-axis coordinate of the top-left corner of the window
 	int top;///<Specifies the Y-axis coordinate of the top-left of the window.
-	HWND hSelfWnd;///<Specifies the window handle of the window itself.
-	HWND hParent;///<Specifies the window handle of the parent window. If the value is NULL, the position coordinate is the monitor coordinate.
+	//HWND hSelfWnd;///<Specifies the window handle of the window itself.
+	//HWND hParent;///<Specifies the window handle of the parent window. If the value is NULL, the position coordinate is the monitor coordinate.
 	tagWndPosition()
 	{
 		left = 0;
 		top = 0;
-		hSelfWnd = NULL;
-		hParent = NULL;
+		//hSelfWnd = NULL;
+		//hParent = NULL;
 	}
 }WndPosition;
 
@@ -298,7 +298,7 @@ public:
 	virtual LastErrorType GetErrorType() const = 0 ;
 	/// \brief Get the last error code.
 	/// \return If the function succeeds, the error code will be returned.
-	virtual UINT64 GetErrorCode() const = 0;
+	//virtual UINT64 GetErrorCode() const = 0;
 
 	/// \brief Get the description for the last error.
 	/// \return If the function succeeds, the error description will be returned. If there is no error, it will return an empty string of length zero(0).
@@ -314,7 +314,7 @@ public:
 	virtual T   GetItem(int index) = 0;
 };
 #define SDK_NULL_AUDIO_FILE_HANDLE (0xffffffff)
-const RECT _SDK_TEST_VIDEO_INIT_RECT = {0,0,0,0};
+//const RECT _SDK_TEST_VIDEO_INIT_RECT = {0,0,0,0};
 
 END_ZOOM_SDK_NAMESPACE
 

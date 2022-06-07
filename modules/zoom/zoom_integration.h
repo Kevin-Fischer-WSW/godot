@@ -3,7 +3,7 @@
 #ifndef ZOOM_INTEGRATION_H
 #define ZOOM_INTEGRATION_H
 
-#include "reference.h"
+#include "core/reference.h"
 
 class ZoomIntegration : public Reference {
     GDCLASS(ZoomIntegration, Reference);
@@ -17,6 +17,8 @@ public:
     void add(int p_value);
     void reset();
     int get_total() const;
+
+	void authorizeSDK();
 
     ZoomIntegration();
 };

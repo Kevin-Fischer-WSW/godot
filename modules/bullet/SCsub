@@ -2,7 +2,7 @@
 
 Import("env")
 Import("env_modules")
-
+print("Hello from Bullet.")
 env_bullet = env_modules.Clone()
 
 # Thirdparty source files
